@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <body>
   <h1>Avneesh Gautam</h1>
@@ -6,4 +6,60 @@
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
 </body>
 
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff69b4;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .balloon {
+            position: absolute;
+            background-color: #ff6347;
+            border-radius: 50%;
+            width: 50px;
+            height: 70px;
+            animation: float 4s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Birthday, My Love!</h1>
+
+    <div class="balloon" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 50%; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 80%; animation-delay: 2s;"></div>
+
+    <audio controls autoplay>
+        <source src="audios/Hey shona.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
 </html>
